@@ -1,0 +1,126 @@
+@import "./Var.scss";
+
+.upper-bar {
+    background-color: $upperBar;
+    padding: .5rem;
+    .social-icons {
+        a {
+            color: white;
+            margin: 0 .5rem ;
+        }
+    }
+    .contact {
+        color: white;
+        p {
+            margin-bottom: 0;
+            margin-right: 1rem;
+            font-family: $langEN;
+        }
+    }
+}
+
+.navbar {  
+    padding-top: 1rem;
+    transition: all .3s ease-in-out;
+    .navbar-brand {
+        img {
+            width: 13rem;
+            transition: all .3s ease-in-out;
+        }
+    }
+    .navbar-nav {
+        .nav-item {
+            margin: 0 .5rem;
+            .nav-link {
+                font-family: $langAR;
+                padding: .5rem 1rem;
+                font-size: .8rem;
+                color: #fff;
+            }
+            &.active, &:hover {
+                .nav-link {
+                    background-color: $sceColor;
+                    border-radius: 10rem;
+                }
+            }
+            &.login {
+                .nav-link {
+                    background-color: $sceColor;
+                    border-radius: 10rem;
+                }
+            }
+            &.lang {
+                .nav-link {
+                    background-color: $mainColor;
+                    border-radius: 10rem;
+                    font-family: $langEN;
+                }
+            }
+        }
+    }
+    #openNav {
+        font-size:30px;
+        cursor:pointer;
+        color: #fff;
+    }
+}
+
+    
+.sideMenu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 11111;
+    top: 0;
+    left: 0;
+    background-color: $upperBar;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    a {
+        padding: 8px 32px 8px 32px;
+        text-align: right;
+        text-decoration: none;
+        font-size: 1rem;
+        color: white;
+        display: block;
+        transition: 0.3s;
+        font-family: $langAR;
+        margin-bottom: .5rem;
+        &:hover {
+            &:not(.closebtn) {
+                background-color: $sceColor;
+                border-radius: 10rem;
+            }
+        }
+        &.login {
+            background-color: $sceColor;
+            border-radius: 10rem;
+        }
+        &.lang {
+            background-color: $mainColor;
+            border-radius: 10rem;
+            font-family: $langEN;
+        }
+    }
+    .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    @media screen and (max-height: 450px) {
+        padding-top: 15px;
+        a {
+            font-size: 18px;
+        }
+    }
+}
+
+.openNav {
+    width: 250px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+  

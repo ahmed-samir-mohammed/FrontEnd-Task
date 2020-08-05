@@ -1,0 +1,32 @@
+@import "./Var.scss";
+
+.create-factory {
+    background-image: url('../public/images/bg-2.png');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    .create {
+        .head {
+            margin-bottom: 4rem;
+        }
+        .create-step {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: $mainColor;
+            .step {
+                margin-bottom: 1.5rem;  
+            }
+            h5 {
+                margin-bottom: 1rem;
+                font-weight: bold;
+            }
+            p {
+                font-weight: bold;
+            }
+        }
+    }
+}

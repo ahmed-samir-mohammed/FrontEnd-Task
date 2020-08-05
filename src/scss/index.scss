@@ -1,0 +1,26 @@
+@import './components/Var.scss';
+// Bootstrap
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+
+// Components
+@import "./components/Navbar.scss";
+@import "./components/Home.scss";
+@import "./components/CreateFactory.scss";
+@import "./components/Actors.scss";
+
+
+body {
+    padding-top: 0;
+    font-family: 'Droid Arabic Kufi', serif !important;
+    footer {
+        background-color: $mainColor;
+        padding: 2rem;
+        text-align: center;
+        p {
+            margin-bottom: 0;
+            color: #fff;
+        }
+    }
+}
+

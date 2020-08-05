@@ -1,0 +1,41 @@
+@import "./Var.scss";
+
+.actors {
+    position: relative;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    .img {
+        position: absolute;
+        background-image: url('../public/images/actors.png');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 20rem;
+        z-index: -1;
+        top: 0;
+    }
+    h4 {
+        margin-bottom: 1rem;
+    }
+    h4, p {
+        color: #fff;
+    }
+    .row {
+        align-items: center;
+        margin-top: 5rem;
+        .box {
+            height: 10rem;
+            width: 100%;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 5px 8px 13px rgba($color: #091F7E, $alpha: 0.19);
+            margin-bottom: 2rem;
+            img {
+                width: 12rem;
+            }
+        }
+    }
+    
+}

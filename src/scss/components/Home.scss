@@ -1,0 +1,30 @@
+@import "./Var.scss";
+
+.home {
+    background-image: url('../public/images/bg-home.png');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    .h1_btn {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        h1 {
+            text-align: right;
+            color: $mainColor;
+            font-size: 2rem;
+            line-height: 1.7;
+        }
+        button {
+            margin-top: 2rem;
+            background-color: #06067a;
+            color: #fff;
+            border: 0;
+            padding: .5rem 1rem;
+            border-radius: 5rem;
+        }
+    }
+}
